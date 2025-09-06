@@ -1,3 +1,8 @@
-<h1 class="text-3xl font-bold underline text-blue-500">Tailwind Plus</h1>
-
-<router-outlet />
+<div class="layout grid grid-cols-1 lg:grid-cols-[16rem_1fr] h-screen">
+  <aside class="h-full bg-gray-100">
+    <app-sidebar></app-sidebar>
+  </aside>
+  <div class="content overflow-y-auto">
+    <router-outlet></router-outlet>
+  </div>
+</div>

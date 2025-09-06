@@ -1,0 +1,11 @@
+<div class="group relative">
+  <img
+    [src]="imageUrl"
+    [alt]="title"
+    class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-[3.5/4]"
+  />
+  <h3 class="mt-2 font-semibold text-gray-900">
+    <a href="#"><span class="absolute inset-0"></span>{{ title }}</a>
+  </h3>
+  <p class="mt-2 text-sm text-gray-500">{{ description }}</p>
+</div>

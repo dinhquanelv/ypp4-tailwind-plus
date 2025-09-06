@@ -1,0 +1,18 @@
+<div class="max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+    <h2 class="text-2xl font-bold text-gray-900">Shop by Collection</h2>
+    <h2 class="text-gray-500 mt-4">
+      Each season, we collaborate with world-class designers to create a collection inspired by the
+      natural world.
+    </h2>
+    <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-x-6">
+      <app-shop-by-collection
+        *ngFor="let c of collection"
+        [title]="c.title"
+        [description]="c.description"
+        [imageUrl]="c.imageUrl"
+      >
+      </app-shop-by-collection>
+    </div>
+  </div>
+</div>
