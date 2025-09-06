@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WithTabs } from './with-tabs';
+import { ProductQuickviews } from './product-quickviews';
 
-describe('WithTabs', () => {
-  let component: WithTabs;
-  let fixture: ComponentFixture<WithTabs>;
+describe('ProductQuickviews', () => {
+  let component: ProductQuickviews;
+  let fixture: ComponentFixture<ProductQuickviews>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WithTabs]
+      imports: [ProductQuickviews]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WithTabs);
+    fixture = TestBed.createComponent(ProductQuickviews);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

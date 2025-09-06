@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WithImageGrid } from './with-image-grid';
+import { Ecommerce } from './ecommerce';
 
-describe('WithImageGrid', () => {
-  let component: WithImageGrid;
-  let fixture: ComponentFixture<WithImageGrid>;
+describe('Ecommerce', () => {
+  let component: Ecommerce;
+  let fixture: ComponentFixture<Ecommerce>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WithImageGrid]
+      imports: [Ecommerce]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WithImageGrid);
+    fixture = TestBed.createComponent(Ecommerce);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
