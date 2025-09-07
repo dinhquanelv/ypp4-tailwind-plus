@@ -1,0 +1,11 @@
+<div>
+  <h3 [class]="data.showTitle ? 'text-sm font-medium text-gray-900' : 'sr-only'">
+    {{ data.title }}
+  </h3>
+
+  <div class="space-y-6" [class.mt-4]="data.showTitle">
+    <p class="text-base text-gray-900">
+      {{ data.content }}
+    </p>
+  </div>
+</div>

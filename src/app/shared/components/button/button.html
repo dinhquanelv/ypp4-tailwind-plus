@@ -1,0 +1,8 @@
+<button
+  [type]="data.type || 'button'"
+  [class]="buttonClasses"
+  [disabled]="isDisabled"
+  (click)="handleClick()"
+>
+  {{ data.text }}
+</button>
