@@ -18,4 +18,6 @@ import { SectionHeader } from '@app/shared/components/section-header/section-hea
   ],
   templateUrl: './product-overviews.html',
 })
-export class ProductOverviews {}
+export class ProductOverviews {
+  title: string = '';
+}
