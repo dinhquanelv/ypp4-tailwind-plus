@@ -1,0 +1,16 @@
+<fieldset class="mt-4">
+  <div class="flex items-center gap-x-3">
+    @for(item of items; track item.value) {
+    <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+      <input
+        type="radio"
+        name="color"
+        [value]="item.value"
+        [checked]="item.checked"
+        class="size-8 appearance-none rounded-full forced-color-adjust-none checked:outline-2 checked:outline-offset-2 focus-visible:outline-3 focus-visible:outline-offset-3 cursor-pointer"
+        [class]="item.bgColor + ' ' + item.outlineColor"
+      />
+    </div>
+    }
+  </div>
+</fieldset>
