@@ -1,0 +1,13 @@
+<div
+  class="relative rounded-xl overflow-hidden shadow hover:shadow transition-shadow duration-300 group cursor-pointer"
+>
+  <img
+    [src]="category.imageUrl"
+    [alt]="category.title"
+    class="w-full h-full object-cover group-hover:opacity-75 transition-transform duration-300"
+  />
+  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+    <h3 class="text-lg font-semibold text-white">{{ category.title }}</h3>
+    <p class="text-sm text-gray-200">{{ category.subtitle }}</p>
+  </div>
+</div>
