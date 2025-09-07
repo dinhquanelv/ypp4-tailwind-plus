@@ -19,7 +19,12 @@
         <app-pricing [data]="pricing"></app-pricing>
 
         <!-- Reviews -->
-        <app-review-count [data]="reviewCount"></app-review-count>
+        <div class="mt-6">
+          <div class="flex items-center">
+            <app-rating [item]="rating"></app-rating>
+            <app-review-count [data]="reviewCount"></app-review-count>
+          </div>
+        </div>
 
         <form class="mt-10">
           <!-- Colors -->

@@ -1,12 +1,9 @@
-<div class="mt-6">
-  <div class="flex items-center">
-    <app-rating [item]="data.rating"></app-rating>
-    @if (data.type === 'link') {
-    <a [href]="data.href" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">
-      {{ data.reviewCount }} reviews
-    </a>
-    } @if (data.type === 'label') {
-    <span class="ml-3 text-sm font-medium text-gray-600"> {{ data.reviewCount }} reviews </span>
-    }
-  </div>
+<div>
+  @if (data.type === 'link') {
+  <a [href]="data.href" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">
+    {{ data.reviewCount }} reviews
+  </a>
+  } @if (data.type === 'label') {
+  <span class="ml-3 text-sm font-medium text-gray-600"> {{ data.reviewCount }} reviews </span>
+  }
 </div>

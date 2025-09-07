@@ -15,6 +15,7 @@ import { withImageGridConfig } from './with-image-grid-config';
 import { ImageItemData } from '@app/shared/components/image-grid/image-grid';
 import { Pricing, PricingData } from '@app/shared/components/pricing/pricing';
 import { ReviewCount, ReviewCountData } from '@app/shared/components/review-count/review-count';
+import { Rating, RatingItemData } from '@app/shared/components/rating/rating';
 
 @Component({
   selector: 'app-with-image-grid',
@@ -22,6 +23,7 @@ import { ReviewCount, ReviewCountData } from '@app/shared/components/review-coun
     Breadcrumb,
     ImageGridFour,
     Pricing,
+    Rating,
     ReviewCount,
     ColorPicker,
     SizePicker,
@@ -37,6 +39,7 @@ export class WithImageGrid {
   breadcrumbItems: BreadcrumbItemData[] = withImageGridConfig.breadcrumbItems;
   images: ImageItemData[] = withImageGridConfig.images;
   pricing: PricingData = withImageGridConfig.pricing;
+  rating: RatingItemData = withImageGridConfig.rating;
   reviewCount: ReviewCountData = withImageGridConfig.reviewCount;
   colorPickerItems: ColorPickerItemData[] = withImageGridConfig.colorPickerItems;
   sizePickerData: SizePickerData = withImageGridConfig.sizePickerData;
