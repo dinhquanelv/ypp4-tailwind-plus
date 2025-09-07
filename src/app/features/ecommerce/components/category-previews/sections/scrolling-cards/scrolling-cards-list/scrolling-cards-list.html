@@ -1,0 +1,11 @@
+<div
+  class="h-[300px] w-full overflow-x-auto overflow-y-hidden p-4 bg-gray-50 rounded-lg shadow flex space-x-4"
+>
+  <app-scrolling-cards-card
+    *ngFor="let c of cards"
+    [imageUrl]="c.imageUrl"
+    [title]="c.title"
+    class="w-48 h-60 flex-shrink-0"
+  >
+  </app-scrolling-cards-card>
+</div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategoryPreview } from './category-preview';
+import { ScrollingCardsList } from './scrolling-cards-list';
 
-describe('CategoryPreview', () => {
-  let component: CategoryPreview;
-  let fixture: ComponentFixture<CategoryPreview>;
+describe('ScrollingCardsList', () => {
+  let component: ScrollingCardsList;
+  let fixture: ComponentFixture<ScrollingCardsList>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CategoryPreview]
+      imports: [ScrollingCardsList]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CategoryPreview);
+    fixture = TestBed.createComponent(ScrollingCardsList);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
