@@ -5,14 +5,18 @@ import { TextSectionData } from '@app/shared/components/text-section/text-sectio
 import { TitleProductData } from '@app/shared/components/title-product/title-product';
 import { ColorPickerItemData } from '@app/shared/components/color-picker/color-picker';
 import { ImageItemData } from '@app/shared/components/image-grid/image-grid';
-import { RatingItemData } from '@app/shared/components/rating/rating';
 import { SizePickerData } from '@app/shared/components/size-picker/size-picker';
 import { BreadcrumbItemData } from '@app/shared/components/breadcrumb/breadcrumb';
+import { PricingData } from '@app/shared/components/pricing/pricing';
+import { ReviewCountData } from '@app/shared/components/review-count/review-count';
+import { RatingItemData } from '@app/shared/components/rating/rating';
 
 export interface WithImageGridConfig {
   breadcrumbItems: BreadcrumbItemData[];
   images: ImageItemData[];
+  pricing: PricingData;
   rating: RatingItemData;
+  reviewCount: ReviewCountData;
   colorPickerItems: ColorPickerItemData[];
   sizePickerData: SizePickerData;
   addToBagButton: ButtonData;
@@ -48,7 +52,15 @@ export const withImageGridConfig: WithImageGridConfig = {
     },
   ],
 
+  pricing: { price: '$192', size: 'lg' },
+
   rating: { star: 5, value: 4, color: 'text-gray-900' },
+
+  reviewCount: {
+    reviewCount: 117,
+    type: 'link',
+    href: '#',
+  },
 
   colorPickerItems: [
     {
