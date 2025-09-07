@@ -12,7 +12,9 @@ export const routes: Routes = [
       { path: '', component: Ecommerce },
       { path: 'ecommerce', component: Ecommerce },
       { path: 'ecommerce/components/product-overviews', component: ProductOverviews },
+      { path: 'ecommerce/components/category-previews', component: ProductQuickviews },
       { path: 'ecommerce/components/product-quickviews', component: ProductQuickviews },
+      { path: 'ecommerce/components/shopping-carts', component: ProductQuickviews },
     ],
   },
 ];
