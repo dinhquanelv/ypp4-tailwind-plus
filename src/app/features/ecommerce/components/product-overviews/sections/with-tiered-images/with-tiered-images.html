@@ -1,1 +1,79 @@
-<p>with-tiered-images works!</p>
+<div class="bg-white border border-gray-200 rounded-lg">
+  <div class="pt-6">
+    <!-- Breadcrumb -->
+    <app-breadcrumb [items]="breadcrumbItems"></app-breadcrumb>
+
+    <!-- Product Information -->
+    <div class="mt-4 p-4 lg:row-span-3 lg:mt-0 max-w-2xl mx-auto lg:max-w-none">
+      <div class="flex flex-row justify-between lg:hidden">
+        <app-title-product [data]="productTitleData"></app-title-product>
+        <app-pricing [data]="pricing"></app-pricing>
+      </div>
+
+      <!-- Reviews -->
+      <div class="mt-8 lg:hidden">
+        <div class="flex items-center">
+          <!-- Rating -->
+          <app-rating [item]="rating"></app-rating>
+
+          <!-- Reviews -->
+          <app-review-count [data]="reviewCount"></app-review-count>
+        </div>
+      </div>
+
+      <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:mt-8">
+        <!-- Gallery -->
+        <div class="lg:order-first">
+          <app-image-grid-three [items]="images"></app-image-grid-three>
+        </div>
+
+        <!-- Content  -->
+        <div class="mt-8 lg:mt-0">
+          <div class="hidden lg:flex lg:flex-row lg:justify-between">
+            <app-title-product [data]="productTitleData"></app-title-product>
+            <app-pricing [data]="pricing"></app-pricing>
+          </div>
+
+          <!-- Rating & Reviews -->
+          <div class="hidden lg:block lg:mt-8">
+            <div class="flex items-center">
+              <!-- Rating -->
+              <app-rating [item]="rating"></app-rating>
+
+              <!-- Reviews -->
+              <app-review-count [data]="reviewCount"></app-review-count>
+            </div>
+          </div>
+
+          <!-- Color Picker -->
+          <div class="lg:mt-8">
+            <app-color-picker [items]="colorPickerItems"></app-color-picker>
+          </div>
+
+          <!-- Size Picker -->
+          <div class="mt-8"><app-size-picker [data]="sizePickerData"></app-size-picker></div>
+
+          <!-- Add to Cart Button -->
+          <div class="mt-8">
+            <app-button [data]="addToCartButton"></app-button>
+          </div>
+
+          <!-- Description -->
+          <div class="mt-10">
+            <app-text-description [data]="descriptionData"></app-text-description>
+          </div>
+
+          <!-- Fabric & Care -->
+          <div class="mt-10">
+            <app-feature-list [data]="fabricCareData"></app-feature-list>
+          </div>
+
+          <!-- Feature Cards -->
+          <div class="mt-10">
+            <app-feature-card [data]="featureCardData"></app-feature-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
