@@ -1,5 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { MenuItemData } from '../../types/MenuItemData';
+
+export interface BreadcrumbItemData {
+  label: string;
+  link?: string;
+  color?: string;
+}
 
 @Component({
   selector: 'app-breadcrumb',
@@ -7,5 +12,5 @@ import { MenuItemData } from '../../types/MenuItemData';
   templateUrl: './breadcrumb.html',
 })
 export class Breadcrumb {
-  @Input() items: MenuItemData[] = [];
+  @Input() items: BreadcrumbItemData[] = [];
 }

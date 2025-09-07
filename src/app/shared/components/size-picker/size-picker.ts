@@ -1,5 +1,19 @@
 import { Component, Input } from '@angular/core';
-import { SizePickerData } from '@app/shared/types/SizePickerData';
+
+export interface SizePickerData {
+  title: string;
+  linkLabel: string;
+  link: string;
+  layout: 'six-items' | 'eight-items';
+  items: SizePickerItemData[];
+}
+
+export interface SizePickerItemData {
+  label: string;
+  value: string;
+  checked?: boolean;
+  disabled?: boolean;
+}
 
 @Component({
   selector: 'app-size-picker',

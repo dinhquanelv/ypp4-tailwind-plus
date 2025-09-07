@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ImageItemData } from '@app/shared/types/ImageItemData';
+import { ImageItemData } from '@app/shared/components/image-grid/image-grid';
 
 @Component({
   selector: 'app-image-grid-four',

@@ -1,5 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { ColorPickerItemData } from '@app/shared/types/ColorPickerItemData';
+
+export interface ColorPickerItemData {
+  value: string;
+  checked?: boolean;
+  bgColor: string;
+  outlineColor: string;
+}
 
 @Component({
   selector: 'app-color-picker',

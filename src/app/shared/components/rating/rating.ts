@@ -1,7 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RatingItemData } from '@app/shared/types/RatingItemData';
 import { RatingModule } from 'primeng/rating';
+
+export interface RatingItemData {
+  star: number;
+  value: number;
+  color: string;
+}
 
 @Component({
   selector: 'app-rating',
