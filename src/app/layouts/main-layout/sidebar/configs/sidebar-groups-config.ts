@@ -15,8 +15,8 @@ export const SIDEBAR_GROUPS: SidebarGroupData[] = [
         active: false,
       },
       {
-        label: 'Category Overviews',
-        link: '/ecommerce/components/category-overviews',
+        label: 'Category Previews',
+        link: 'ecommerce/components/category-previews',
         active: false,
       },
       {
