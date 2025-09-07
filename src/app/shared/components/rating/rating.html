@@ -1,0 +1,10 @@
+<div class="flex justify-center">
+  <p-rating
+    [stars]="item.star"
+    [(ngModel)]="item.value"
+    [readonly]="true"
+    [class]="item.color"
+    [iconOnClass]="'pi pi-star-fill p-0.5 cursor-default'"
+    [iconOffClass]="'pi pi-star p-0.5 cursor-default'"
+  />
+</div>

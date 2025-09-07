@@ -1,6 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SidebarItemData } from './types/sidebar-item-data';
+
+export interface SidebarItemData {
+  label: string;
+  link: string;
+  active: boolean;
+}
 
 @Component({
   selector: 'app-sidebar-item',

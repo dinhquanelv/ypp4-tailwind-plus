@@ -1,5 +1,5 @@
 <!-- Sidebar Toggle Button -->
-<div class="block 2xl:hidden">
+<div class="block 2xl:hidden fixed top-0 left-0 right-0 mt-14 bg-white z-50">
   <div class="w-full h-14 flex items-center justify-start border-b border-gray-200 px-4">
     <button
       class="size-7 rounded-md cursor-pointer hover:bg-gray-100 transition-colors duration-100"
@@ -12,8 +12,8 @@
 
 <!-- Sidebar -->
 <nav
-  class="fixed flex flex-col justify-start w-80 h-screen p-4 bg-white border-r border-gray-200 overflow-y-auto transform transition-transform duration-300 ease-in-out -translate-x-full 2xl:translate-x-0"
-  [class.translate-x-0]="!sidebarOpen"
+  class="fixed flex flex-col justify-start w-80 h-screen mt-28 2xl:mt-14 p-4 bg-white border-r border-gray-200 overflow-y-auto -translate-x-full 2xl:translate-x-0 z-50"
+  [class.translate-x-0]="sidebarOpen"
 >
   @for(group of sidebarGroups; track group.label) {
   <div class="mb-4">
