@@ -16,29 +16,19 @@
 
       <!-- Options -->
       <div class="mt-4 lg:row-span-3 lg:mt-0">
-        <h2 class="sr-only">Product information</h2>
-        <p class="text-3xl tracking-tight text-gray-900">$192</p>
+        <app-pricing [data]="pricing"></app-pricing>
 
         <!-- Reviews -->
-        <div class="mt-6">
-          <div class="flex items-center">
-            <app-rating [item]="rating"></app-rating>
-            <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500"
-              >117 reviews</a
-            >
-          </div>
-        </div>
+        <app-review-count [data]="reviewCount"></app-review-count>
 
         <form class="mt-10">
           <!-- Colors -->
-          <div>
-            <h3 class="text-sm font-medium text-gray-900">Color</h3>
-
-            <app-color-picker [items]="colorPickerItems"></app-color-picker>
-          </div>
+          <app-color-picker [items]="colorPickerItems"></app-color-picker>
 
           <!-- Sizes -->
-          <app-size-picker [data]="sizePickerData"></app-size-picker>
+          <div class="mt-10">
+            <app-size-picker [data]="sizePickerData"></app-size-picker>
+          </div>
 
           <div class="mt-10">
             <app-button [data]="addToBagButton"></app-button>

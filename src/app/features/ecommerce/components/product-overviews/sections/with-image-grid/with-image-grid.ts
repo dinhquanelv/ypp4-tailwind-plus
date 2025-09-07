@@ -13,14 +13,16 @@ import { TextSection, TextSectionData } from '@app/shared/components/text-sectio
 import { TitleProduct, TitleProductData } from '@app/shared/components/title-product/title-product';
 import { withImageGridConfig } from './with-image-grid-config';
 import { ImageItemData } from '@app/shared/components/image-grid/image-grid';
-import { Rating } from '@app/shared/components/rating/rating';
+import { Pricing, PricingData } from '@app/shared/components/pricing/pricing';
+import { ReviewCount, ReviewCountData } from '@app/shared/components/review-count/review-count';
 
 @Component({
   selector: 'app-with-image-grid',
   imports: [
     Breadcrumb,
     ImageGridFour,
-    Rating,
+    Pricing,
+    ReviewCount,
     ColorPicker,
     SizePicker,
     Button,
@@ -34,7 +36,8 @@ import { Rating } from '@app/shared/components/rating/rating';
 export class WithImageGrid {
   breadcrumbItems: BreadcrumbItemData[] = withImageGridConfig.breadcrumbItems;
   images: ImageItemData[] = withImageGridConfig.images;
-  rating = withImageGridConfig.rating;
+  pricing: PricingData = withImageGridConfig.pricing;
+  reviewCount: ReviewCountData = withImageGridConfig.reviewCount;
   colorPickerItems: ColorPickerItemData[] = withImageGridConfig.colorPickerItems;
   sizePickerData: SizePickerData = withImageGridConfig.sizePickerData;
   addToBagButton: ButtonData = withImageGridConfig.addToBagButton;
