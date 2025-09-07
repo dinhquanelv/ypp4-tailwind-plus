@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CategoryPreview } from '../category-preview/category-preview';
+import { CollectionsCard } from '../collections-card/collections-card';
 
-interface Category {
+interface ICollections {
   title: string;
   description: string;
   imageUrl: string;
 }
 
 @Component({
-  selector: 'app-category-preview-list',
-  imports: [CommonModule, CategoryPreview],
-  templateUrl: './category-preview-list.html',
+  selector: 'app-collections-list',
+  imports: [CommonModule, CollectionsCard],
+  templateUrl: './collections-list.html',
 })
-export class CategoryPreviewList {
-  categories: Category[] = [
+export class CollectionsList {
+  collections: ICollections[] = [
     {
       title: 'Desk and Office',
       description: 'Work from home accessories',

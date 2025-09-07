@@ -3,8 +3,8 @@ import { CollectionsList } from '../../components/category-previews/sections/col
 import { ShopByCategoryList } from '../../components/shop-by-category-list/shop-by-category-list';
 
 @Component({
-  selector: 'app-category-preview',
+  selector: 'app-category-previews',
   imports: [CollectionsList, ShopByCategoryList],
-  templateUrl: './category-preview.html',
+  templateUrl: './category-previews.html',
 })
-export class CategoryPreview {}
+export class CategoryPreviews {}

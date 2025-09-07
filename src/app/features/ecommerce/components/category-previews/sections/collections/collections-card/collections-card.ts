@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-category-preview',
+  selector: 'app-collections-card',
   imports: [],
-  templateUrl: './category-preview.html',
+  templateUrl: './collections-card.html',
 })
-export class CategoryPreview {
+export class CollectionsCard {
   @Input() title!: string;
   @Input() description!: string;
   @Input() imageUrl!: string;

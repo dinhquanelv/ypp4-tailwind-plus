@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategoryPreviewList } from './category-preview-list';
+import { CollectionsCard } from './collections-card';
 
-describe('CategoryPreviewList', () => {
-  let component: CategoryPreviewList;
-  let fixture: ComponentFixture<CategoryPreviewList>;
+describe('CollectionsCard', () => {
+  let component: CollectionsCard;
+  let fixture: ComponentFixture<CollectionsCard>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CategoryPreviewList],
+      imports: [CollectionsCard],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CategoryPreviewList);
+    fixture = TestBed.createComponent(CollectionsCard);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

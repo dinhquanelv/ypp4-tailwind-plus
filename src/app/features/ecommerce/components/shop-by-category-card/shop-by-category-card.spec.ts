@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategoryPreview } from './category-preview';
+import { ShopByCategoryCard } from './shop-by-category-card';
 
-describe('CategoryPreview', () => {
-  let component: CategoryPreview;
-  let fixture: ComponentFixture<CategoryPreview>;
+describe('ShopByCategoryCard', () => {
+  let component: ShopByCategoryCard;
+  let fixture: ComponentFixture<ShopByCategoryCard>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CategoryPreview]
+      imports: [ShopByCategoryCard]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CategoryPreview);
+    fixture = TestBed.createComponent(ShopByCategoryCard);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

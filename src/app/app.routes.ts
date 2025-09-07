@@ -3,7 +3,7 @@ import { MainLayout } from './layouts/main-layout/main-layout';
 import { Ecommerce } from './features/ecommerce/ecommerce';
 import { ProductOverviews } from './features/ecommerce/components/product-overviews/product-overviews';
 import { ProductQuickviews } from './features/ecommerce/components/product-quickviews/product-quickviews';
-import { CategoryPreview } from './features/ecommerce/pages/caregory-preview/category-preview';
+import { CategoryPreviews } from './features/ecommerce/components/category-previews/category-previews';
 
 export const routes: Routes = [
   {
@@ -13,7 +13,7 @@ export const routes: Routes = [
       { path: '', component: Ecommerce },
       { path: 'ecommerce', component: Ecommerce },
       { path: 'ecommerce/components/product-overviews', component: ProductOverviews },
-      { path: 'ecommerce/components/category-previews', component: CategoryPreview },
+      { path: 'ecommerce/components/category-previews', component: CategoryPreviews },
       { path: 'ecommerce/components/product-quickviews', component: ProductQuickviews },
       { path: 'ecommerce/components/shopping-carts', component: ProductQuickviews },
     ],

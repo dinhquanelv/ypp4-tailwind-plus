@@ -1,0 +1,31 @@
+<div class="bg-white py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-900 px-2 py-1 rounded inline-block">
+        Shop by Category
+      </h2>
+      <a href="#" class="text-sm font-medium text-indigo-600 hover:underline">
+        Browse all categories →
+      </a>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[200px]">
+      <div class="lg:row-span-2 lg:col-span-2">
+        <app-shop-by-category-card
+          [category]="category[0]"
+          class="h-full"
+        ></app-shop-by-category-card>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <app-shop-by-category-card
+          [category]="category[1]"
+          class="h-1/2"
+        ></app-shop-by-category-card>
+        <app-shop-by-category-card
+          [category]="category[2]"
+          class="h-1/2"
+        ></app-shop-by-category-card>
+      </div>
+    </div>
+  </div>
+</div>
