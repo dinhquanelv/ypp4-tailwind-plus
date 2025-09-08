@@ -1,0 +1,22 @@
+<p-drawer
+  header="Right Drawer"
+  [(visible)]="visible"
+  position="right"
+  [modal]="true"
+  styleClass="custom-drawer"
+>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+</p-drawer>
+
+<div class="flex gap-2 justify-center">
+  <p-button
+    type="button"
+    (click)="visible = true"
+    label="Open Drawer"
+    class="rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-700"
+  />
+</div>

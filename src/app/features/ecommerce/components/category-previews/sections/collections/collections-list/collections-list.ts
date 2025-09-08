@@ -6,6 +6,7 @@ interface ICollections {
   title: string;
   description: string;
   imageUrl: string;
+  layout: 'layout1' | 'layout2'; // 👈 thêm layout
 }
 
 @Component({
@@ -20,18 +21,21 @@ export class CollectionsList {
       description: 'Work from home accessories',
       imageUrl:
         'https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-01.jpg',
+      layout: 'layout1',
     },
     {
-      title: 'Self-Improvement',
+      title: 'Self-Improvement ',
       description: 'Journals and note-taking',
       imageUrl:
         'https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-02.jpg',
+      layout: 'layout1',
     },
     {
       title: 'Travel',
       description: 'Daily commute essentials',
       imageUrl:
         'https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-03.jpg',
+      layout: 'layout1',
     },
   ];
 }
