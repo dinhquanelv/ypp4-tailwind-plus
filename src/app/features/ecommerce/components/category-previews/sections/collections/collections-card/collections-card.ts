@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { ICollections } from '../collections-list/collections-list';
 
 @Component({
   selector: 'app-collections-card',
@@ -7,8 +8,5 @@ import { Component, Input } from '@angular/core';
   templateUrl: './collections-card.html',
 })
 export class CollectionsCard {
-  @Input() title!: string;
-  @Input() description!: string;
-  @Input() imageUrl!: string;
-  @Input() layout: 'layout1' | 'layout2' = 'layout1';
+  @Input() collection!: ICollections;
 }
